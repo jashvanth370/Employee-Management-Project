@@ -31,8 +31,8 @@ A full-stack web application for managing employee records efficiently. It provi
 1. Clone the repository
 
    ```bash
-   git clone https://github.com/<your-username>/<repo-name>.git
-   cd <repo-name>
+   git clone https://github.com/jashvanth370/Employee-Management-Project.git
+   cd <Employee-Management-Project>
    ```
 
 2. Setup the backend (.NET API)
