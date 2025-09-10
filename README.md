@@ -77,5 +77,3 @@ Contributions, issues, and feature requests are welcome! Feel free to fork this 
 This project is licensed under the MIT License.
 
 ---
-
-Would you like me to also design a **short project tagline (1 line)** you can use as the GitHub repo subtitle (appears under the repo name)?
