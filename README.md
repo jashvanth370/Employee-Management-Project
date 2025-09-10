@@ -1,2 +1,81 @@
-# Employee-Management-Project
-A web application for managing employee data with features such as registration, role-based login, profile management, and CRUD operations. It supports secure authentication with Google and Microsoft SSO. The project was built with Angular (frontend), .NET (backend), and SQL Server for database management, with validations to ensure data accuracy.
+
+
+# 👥 Employee Management System
+
+A full-stack web application for managing employee records efficiently. It provides secure authentication, role-based access, and easy management of employee details, supporting both **Google** and **Microsoft SSO**.
+
+---
+
+## ✨ Features
+
+* 👤 Employee registration and profile management
+* 🔐 Role-based authentication and authorization
+* 💾 CRUD operations for employee records
+* 🌐 Single Sign-On (Google & Microsoft SSO)
+* 🗄️ SQL Server integration for data storage
+* ✅ Input validations to ensure data accuracy
+
+---
+
+## 🛠️ Tech Stack
+
+* **Frontend:** Angular
+* **Backend:** .NET (C#)
+* **Database:** SQL Server
+* **Authentication:** Google SSO, Microsoft SSO
+
+---
+
+## 📂 Installation
+
+1. Clone the repository
+
+   ```bash
+   git clone https://github.com/<your-username>/<repo-name>.git
+   cd <repo-name>
+   ```
+
+2. Setup the backend (.NET API)
+
+   * Open the solution in Visual Studio
+   * Update `appsettings.json` with your SQL Server connection string
+   * Run the API
+
+3. Setup the frontend (Angular)
+
+   ```bash
+   cd frontend
+   npm install
+   ng serve
+   ```
+
+4. Open in browser
+
+   ```
+   http://localhost:4200/
+   ```
+
+---
+
+## 🚀 Future Enhancements
+
+* 📊 Add analytics/dashboard for employee statistics
+* 📧 Email notifications for new registrations
+* 📱 Mobile-friendly responsive UI
+* ☁️ Deployment on Azure
+
+---
+
+## 🤝 Contributing
+
+Contributions, issues, and feature requests are welcome! Feel free to fork this repo and submit pull requests.
+
+---
+
+## 📄 License
+
+This project is licensed under the MIT License.
+
+---
+
+Would you like me to also design a **short project tagline (1 line)** you can use as the GitHub repo subtitle (appears under the repo name)?
