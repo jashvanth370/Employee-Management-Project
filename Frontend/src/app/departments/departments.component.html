@@ -1,0 +1,15 @@
+<h4>Departments</h4>
+<div class="table-responsive">
+    <table class="table table-bordered table-sm">
+        <thead>
+            <tr>
+                <th>Name</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let d of departments">
+                <td>{{ d.name }}</td>
+            </tr>
+        </tbody>
+    </table>
+</div>

@@ -1,0 +1,65 @@
+<div class="container mt-5">
+    <h2>Employee Registration</h2>
+
+    <form [formGroup]="form" (ngSubmit)="onSubmit()" novalidate>
+
+        <!-- Name -->
+        <div class="mb-3">
+            <label for="name" class="form-label">Name</label>
+            <input id="name" type="text" formControlName="name" class="form-control" placeholder="Enter full name" />
+            <div *ngIf="form.get('name')?.touched && form.get('name')?.invalid" class="text-danger">
+                Name is required
+            </div>
+        </div>
+
+        <!-- Email -->
+        <div class="mb-3">
+            <label for="emailId" class="form-label">Email</label>
+            <input id="emailId" type="email" formControlName="emailId" class="form-control" placeholder="Enter email" />
+            <div *ngIf="form.get('emailId')?.touched && form.get('emailId')?.invalid" class="text-danger">
+                Enter a valid email
+            </div>
+        </div>
+
+        <!-- Mobile -->
+        <div class="mb-3">
+            <label for="mobileNo" class="form-label">Mobile Number</label>
+            <input id="mobileNo" type="text" formControlName="mobileNo" class="form-control"
+                placeholder="Enter mobile number" />
+            <div *ngIf="form.get('mobileNo')?.touched && form.get('mobileNo')?.invalid" class="text-danger">
+                Mobile number is required
+            </div>
+        </div>
+
+        <!-- Password -->
+        <div class="mb-3">
+            <label for="password" class="form-label">Password</label>
+            <input id="password" type="password" formControlName="password" class="form-control"
+                placeholder="Enter password" />
+            <div *ngIf="form.get('password')?.touched && form.get('password')?.invalid" class="text-danger">
+                Password is required
+            </div>
+        </div>
+
+        <!-- Department -->
+        <div class="mb-3">
+            <label for="departmentId" class="form-label">Department</label>
+            <select id="departmentId" formControlName="departmentId" class="form-select">
+                <option value="">Select Department</option>
+                <option *ngFor="let d of departments" [value]="d.id">{{ d.name }}</option>
+            </select>
+        </div>
+
+        <!-- Photo URL (Optional) -->
+        <div class="mb-3">
+            <label for="photo" class="form-label">Upload Photo</label>
+            <input type="file" id="photo" (change)="onFileSelected($event)" class="form-control" />
+        </div>
+
+        <!-- Submit Button -->
+        <button type="submit" class="btn btn-primary" [disabled]="form.invalid || submitting">
+            {{ submitting ? 'Registering...' : 'Register' }}
+        </button>
+
+    </form>
+</div>
